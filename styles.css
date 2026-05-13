@@ -1,0 +1,164 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Fundo com imagem temática e overlay escuro para leitura */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(img/fundosite.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Container Principal */
+.container {
+    text-align: center;
+    border: 2px solid #0ff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 25px #0ff, inset 0 0 15px #0ff;
+    position: relative;
+    max-width: 800px;
+    backdrop-filter: blur(5px);
+}
+
+/* Logo e Título */
+.title {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.logo-img {
+    height: 178px;
+    width: auto;
+    /* Efeito neon em PNGs */
+    filter: drop-shadow(0 0 10px #0ff) drop-shadow(0 0 20px #0ff) drop-shadow(0 0 40px #0ff);
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px #0ff) drop-shadow(0 0 30px #0ff);
+}
+
+/* Texto de Ação (Hackeie! Corra!) */
+.actions {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.separator {
+    color: #fff;
+    margin: 0 15px;
+    text-shadow: 0 0 5px #fff;
+}
+
+/* Descrição */
+.description {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    color: #ddd;
+}
+
+.description strong {
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #fff;
+}
+
+/* Botão Principal */
+.btn-main {
+    padding: 15px 45px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    background: transparent;
+    color: #0ff;
+    border: 3px solid #0ff;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 0 0 5px #0ff;
+    box-shadow: 0 0 15px #0ff;
+    margin-bottom: 40px;
+}
+
+.btn-main:hover {
+    background: #0ff;
+    color: #000;
+    box-shadow: 0 0 30px #0ff;
+    transform: scale(1.05);
+}
+
+/* Área das Lojas (Footer) */
+.store-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 255, 255, 0.3);
+    padding-top: 30px;
+}
+
+.btn-store {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ff00ff;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    border-radius: 4px;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+.btn-store i {
+    font-size: 1.2rem;
+    color: #ff00ff;
+}
+
+.btn-store:hover {
+    background: #ff00ff;
+    color: #fff;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+.btn-store:hover i {
+    color: #fff;
+}
+
+/* Efeito de Scanline (CRT Style) */
+.scanline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
